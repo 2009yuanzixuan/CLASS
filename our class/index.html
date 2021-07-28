@@ -1,0 +1,223 @@
+<!doctype html>
+<!--袁梓轩水印-->
+<html>
+    <head>
+        <title>五年⁵班</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        
+        <style>
+            .top-box{
+                weigh: 100%;
+                height: 100 auto;
+                background-color: rgb(80,190,240);
+                font-size: 20px;
+                font-family: STXingkai;
+                padding: 5px;
+                color: rgb(75,75,75);
+                
+                text-align:center;
+            }
+            .under-top-box{
+                weigh: 100%;
+                height: auto;
+                background-color: rgb(100,255,220);
+                font-size: 20px;
+                font-family: STXingkai;
+                padding: 5px;
+                color: rgb(75,75,75);
+                margin-left: 10px;
+                margin-right: 10px;
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
+            .middle-box{
+                weigh :100% ;
+                height: 100px ;
+                background-color: rgb(215,215,215);
+                margin-left: 10px;
+                margin-right: 10px;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                display: flex;
+            }
+            .middle-small-box{
+                weigh: 10%;
+                height: 30px ;
+                background-color: rgb(225,225,125);
+                font-size: 30px;
+                font-family: STXingkai;
+                padding: 17px;
+                margin-left: 30px;
+                margin-top: 15px;
+                margin-bottom:5px
+            }
+            .hh-box{
+                width:100%;
+                height: auto;
+                font-size: 30px;
+                line-height: 108px;
+                text-align: center;
+                background-color: rgb(190,255,67);
+                font-family: STXingkai;
+                margin: 10px;
+                margin-bottom: 0px;
+                
+                }
+            .hh-li-box{
+                width:auto;
+                height: auto;
+                font-size: 30px;
+                line-height: 108px;
+                text-align: center;
+                background-color: rgb(8, 170, 182);
+                font-family: STXingkai;
+                margin: 10px;
+                margin-bottom: 0px;
+                
+            }
+        </style>
+        
+    </head>
+    <body bgcolor="CCCC88">
+        
+
+        <div class="top-box">
+            <!--<a href="https://code.xueersi.com/space/59842528">我的主页</a>-->
+            <h1>五年⁵班</h1>
+        </div>
+        <div class="under-top-box">
+            <!--<h2>&nbsp;&nbsp;&nbsp;那些年......</h2>-->
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="src/biy2.png" height=100px weigh=200px>
+        </div>
+        <div class="middle-box">
+            <div class="middle-small-box">
+                <a href="group photo.html">相册</a>
+            </div>
+            <div class="middle-small-box">
+                <a href="zuowei.html">座位表</a>
+            </div>
+            
+            <div class="middle-small-box">
+                <a href="qrc.html">二维码</a>
+            </div>
+            
+        </div>
+        <div class="hh-box">
+            老师列表：
+            
+            <div class="hh-li-box">语文老师：符晓燕&nbsp;qq:29009891 tel:13918335172&nbsp;&nbsp;|数学老师：王琴霞&nbsp;&nbsp;telephone:13402126458</div>
+            <div class="hh-li-box">英语老师：&nbsp;朱颖&nbsp;&nbsp;telephone:13795444318&nbsp;&nbsp;|音乐老师：唐丹华&nbsp;&nbsp;telephone</div>
+            <div class="hh-li-box">美术老师：黄佳琦&nbsp;&nbsp;telephone：暂无&nbsp;&nbsp;|自然老师：葛晓东&nbsp;&nbsp;telephone：暂无|体育老师：黄晓&nbsp;</div>
+            <div class="hh-li-box">大队部老师：徐晨曦&nbsp;&nbsp;telephone&nbsp;&nbsp;|朱喻杰&nbsp;&nbsp;telephone</div>
+            <div class="hh-li-box">&nbsp;曾数学老师：王笑欢&nbsp;&nbsp;|体育课电影供应商-高晓怡(曾自然老师)(你们能看电影都要感谢她)</div>
+        </div>
+    <!--the end  下面非本人袁梓轩编写-->
+    <!--  感谢C站所有提供此特效的人  -->
+    <div  style="opacity: 0.01;"></div> 
+        <script>
+            var i = 1;
+            var flag = true;
+            function fade() {
+                var box = document.getElementById('box');
+                if (document.all) {
+                    box.style.filter = "alpha(opacity='+i+')";
+                } else {
+                    box.style.opacity = parseFloat(i / 100);
+                }
+                if (i < 100 && flag) {
+                    i += 5;
+                }
+                else {
+                    flag = false;
+               }
+                if (i > 0 && !flag) {
+                    i -= 5;
+                }
+                else {
+                    flag = true;
+                }
+                setTimeout('fade()', 50);
+            }
+            fade();
+    </script>
+    <script type="text/javascript">
+    	    ! function () {
+    	        function o(w, v, i) {
+    	            return w.getAttribute(v) || i
+    	        }
+    	        function j(i) {
+    	            return document.getElementsByTagName(i)
+    	        }
+    	        function l() {
+    	            var i = j("script"),
+    	                w = i.length,
+    	                v = i[w - 1];
+    	            return {
+    	                l: w,
+    	                z: o(v, "zIndex", -1),
+    	                o: o(v, "opacity", 7),
+    	                c: o(v, "color", "250,250,200"),
+    	                n: o(v, "count", 150)
+    	            }
+    	        }
+    	        function k() {
+    	            r = u.width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth, n = u.height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight
+    	        }
+    	        function b() {
+    	            e.clearRect(0, 0, r, n);
+    	            var w = [f].concat(t);
+    	            var x, v, A, B, z, y;
+    	            t.forEach(function (i) {
+    	                i.x += i.xa, i.y += i.ya, i.xa *= i.x > r || i.x < 0 ? -1 : 1, i.ya *= i.y > n || i.y < 0 ? -1 : 1, e.fillRect(i.x - 0.5, i.y - 0.5, 1, 1);
+    	                for (v = 0; v < w.length; v++) {
+    	                    x = w[v];
+    	                    if (i !== x && null !== x.x && null !== x.y) {
+    	                        B = i.x - x.x, z = i.y - x.y, y = B * B + z * z;
+    	                        y < x.max && (x === f && y >= x.max / 2 && (i.x -= 0.01 * B, i.y -= 0.01 * z), A = (x.max - y) / x.max, e.beginPath(), e.lineWidth = A / 2, e.strokeStyle = "rgba(" + s.c + "," + (A + 0.2) + ")", e.moveTo(i.x, i.y), e.lineTo(x.x, x.y), e.stroke())
+    	                    }
+    	                }
+    	                w.splice(w.indexOf(i), 1)
+    	            }), m(b)
+    	        }
+    	        var u = document.createElement("canvas"),
+    	            s = l(),
+    	            c = "c_n" + s.l,
+    	            e = u.getContext("2d"),
+    	            r, n, m = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame || function (i) {
+    	                window.setTimeout(i, 1000 / 45)
+    	            },
+    	            a = Math.random,
+    	            f = {
+    	                x: null,
+    	                y: null,
+    	                max: 100000
+    	            };
+    	        u.id = c;
+    	        u.style.cssText = "position:fixed;top:0;left:0;z-index:" + s.z + ";opacity:" + s.o;
+    	        j("body")[0].appendChild(u);
+    	        k(), window.onresize = k;
+    	        window.onmousemove = function (i) {
+    	            i = i || window.event, f.x = i.clientX, f.y = i.clientY
+    	        }, window.onmouseout = function () {
+    	            f.x =null, f.y = null
+    	        };
+    	        for (var t = [], p = 0; s.n > p; p++) {
+    	            var h = a() * r,
+    	                g = a() * n,
+    	                q = 2 * a() - 1,
+    	                d = 2 * a() - 1;
+    	            t.push({
+    	                x: h,
+    	                y: g,
+    	                xa: q,
+    	                ya: d,
+    	                max: 9000
+    	            })
+    	        }
+    	        setTimeout(function () {
+    	            b()
+    	        }, 100)
+    	    }();
+    	</script>    
+    </body>
+</html>
