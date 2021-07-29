@@ -1,14 +1,56 @@
-<!doctype html>
-<!--袁梓轩水印-->
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>chats</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <style>
+
+<head>
+    <meta charset="utf-8">
+    <title>给我留言</title>
+    <style>
+        body {
+            width: 90%;
+            background: url(src/留言板bj.jpg);
+            background-size:100%;
+            margin: 4% auto;
+            text-align: left;
+        }
+        .bj{
+            background-color: rgba(255,255,153,0.6);
+            border-radius:5px ;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);     
+            margin-bottom: 20px;
+        }
+        form{
+            background: url(src/留言板bj.png);
+            background-size:100%;
+            background-repeat: no-repeat;
+            height: 256px;
+            padding-left: 23%;
+            padding-top: 10.5%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bj">
+        <form  action="/messageboard">
+            <p>昵称：</p>
+            <input  name="who"/>
             
-        </style>
-    </head>
-    <body>
+            <p>留言：</p>
+            <textarea name="text" style="width:350px;height:75px"></textarea>
         
-    </body>
+            <button>提交</button>
+        </form>
+    </div>    
+    
+    <!--=========显示历史留言=======-->
+    <div class="bj" style="padding:8px">
+        <h2>留言记录：</h2>
+        {% for message in messages %}
+            <p>昵称：{{message['name']}}</p>
+            <p>留言内容：{{message['text']}}</p>
+            <hr/>
+        {% endfor %}
+    </div> 
+</body>
+
 </html>

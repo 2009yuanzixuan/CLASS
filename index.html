@@ -8,13 +8,13 @@
         <style>
             .top-box{
                 weigh: 100%;
-                height: 100 auto;
+                height: 100px;
                 background-color: rgb(80,190,240);
                 font-size: 20px;
                 font-family: STXingkai;
                 padding: 5px;
                 color: rgb(75,75,75);
-                
+                margin:10px;
                 text-align:center;
             }
             .under-top-box{
@@ -53,6 +53,7 @@
             }
             .hh-box{
                 width:100%;
+                padding: 5px;
                 height: auto;
                 font-size: 30px;
                 line-height: 108px;
@@ -60,11 +61,11 @@
                 background-color: rgb(190,255,67);
                 font-family: STXingkai;
                 margin: 10px;
-                margin-bottom: 0px;
+                margin-right:10px
                 
                 }
             .hh-li-box{
-                width:auto;
+                width:100%;
                 height: auto;
                 font-size: 30px;
                 line-height: 108px;
@@ -75,19 +76,49 @@
                 margin-bottom: 0px;
                 
             }
+            
+            }
         </style>
         
     </head>
     <body bgcolor="CCCC88">
         
-
+        <script>
+            function Function() {
+                alert("登录失败，请重新进入网页");
+            }
+            function myFunction() {
+                var txt;
+                var person = prompt("请输入秘钥：", "*********");
+                if (person!="2021wmbyl") {
+               
+                    alert("秘钥错误");
+                    var person = prompt("请输入秘钥：", "*********");
+                    if (person!="2021wmbyl") {
+                        while(true){
+                            Function()
+                        }
+                    } 
+                    else if(person=="2021wmbyl"){
+                        alert("你好，同学！今天过得好吗？");
+                    }
+                } 
+                else if(person=="2021wmbyl"){
+                    alert("你好，同学！今天过得好吗？");
+                }
+                document.getElementById("demo").innerHTML = txt;
+            }
+            myFunction()
+        </script>
+        
+        
         <div class="top-box">
             <!--<a href="https://code.xueersi.com/space/59842528">我的主页</a>-->
             <h1>五年⁵班</h1>
         </div>
         <div class="under-top-box">
             <!--<h2>&nbsp;&nbsp;&nbsp;那些年......</h2>-->
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="src/biy2.png" height=100px weigh=200px>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="src/biy2.png" height=100px weigh=200px>
         </div>
         <div class="middle-box">
             <div class="middle-small-box">
@@ -105,11 +136,20 @@
         <div class="hh-box">
             老师列表：
             
-            <div class="hh-li-box">语文老师：符晓燕&nbsp;qq:29009891 tel:13918335172&nbsp;&nbsp;|数学老师：王琴霞&nbsp;&nbsp;telephone:13402126458</div>
-            <div class="hh-li-box">英语老师：&nbsp;朱颖&nbsp;&nbsp;telephone:13795444318&nbsp;&nbsp;|音乐老师：唐丹华&nbsp;&nbsp;telephone</div>
+            <div class="hh-li-box">语文老师：符晓燕&nbsp;qq:**** tel:***&nbsp;&nbsp;|数学老师：王琴霞&nbsp;&nbsp;telephone:13402126458</div>
+            <div class="hh-li-box">英语老师：&nbsp;朱颖&nbsp;&nbsp;telephone:***&nbsp;&nbsp;|音乐老师：唐丹华&nbsp;&nbsp;telephone</div>
             <div class="hh-li-box">美术老师：黄佳琦&nbsp;&nbsp;telephone：暂无&nbsp;&nbsp;|自然老师：葛晓东&nbsp;&nbsp;telephone：暂无|体育老师：黄晓&nbsp;</div>
             <div class="hh-li-box">大队部老师：徐晨曦&nbsp;&nbsp;telephone&nbsp;&nbsp;|朱喻杰&nbsp;&nbsp;telephone</div>
             <div class="hh-li-box">&nbsp;曾数学老师：王笑欢&nbsp;&nbsp;|体育课电影供应商-高晓怡(曾自然老师)(你们能看电影都要感谢她)</div>
+        </div>
+        <div class="top-box">
+            <!--<a href="https://code.xueersi.com/space/59842528">我的主页</a>-->
+            <br>
+            <a href="dex2.html">下一页</a>
+            <a href="dex2.html">Next Page</a>
+            &copy; 2021.07 袁梓轩 (部分代码由朱怡婷编写) (背景特效由C站小轩提供)&copy; 2021.07 袁梓轩 (部分代码由朱怡婷编写) (背景特效由C站小轩提供)
+            
+            
         </div>
     <!--the end  下面非本人袁梓轩编写-->
     <!--  感谢C站所有提供此特效的人  -->
